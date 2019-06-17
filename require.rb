@@ -12,6 +12,6 @@ if ENV['BOOTSNAP_CACHE_DIR']
   )
 end
 $LOAD_PATH << File.join(__dir__, 'a')
-puts("require b/file: #{require File.join(__dir__, 'b/file')}")
 $LOAD_PATH << File.join(__dir__, 'b')
+puts("require b/file: #{require File.join(__dir__, 'b/file')}")
 puts("require file: #{require 'file'}")
